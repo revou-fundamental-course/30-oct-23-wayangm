@@ -43,6 +43,52 @@
             badan Anda (dalam meter) atau BMI = Kg/Ms<sup>2</sup>. </p>
         </div>
         <!-- Description section start -->
-        
+      <!-- Input data start -->
+      <div class="form">
+        <h2 id="gender">Jenis Kelamin</h2>
+        <!-- Radio button container start -->
+        <div class="radio-button"> <label class="gender"> <input class="radio"
+
+              id="male" name="gender" type="radio"> Laki-Laki <span></span> </label>
+        </div>
+        <div class="radio-button"> <label class="gender"> <input class="radio"
+
+              id="female" name="gender" type="radio"> Wanita <span></span> </label>
+        </div>
+        <!-- Radio button container start -->
+
+        <!-- User form input start -->
+        <form>
+          <!-- Weight data input start -->
+          <h2>Berat Badan</h2>
+          <label for="weight"> Berat Badan (kg)</label>
+          <div class="input-wrapper"> <input id="weight" placeholder="Input Berat Badan..."
+           min="30" max="200" class="number" type="number">
+          <div class="suffix">kg</div>
+          </div>
+          <div class="error-message"></div>
+          <!-- Weight data input start -->
+
+          <!-- Age data input start -->
+          <h2>Usia</h2>
+          <label for="age">Usia (tahun)</label>
+          <div class="input-wrapper"> <input id="age" placeholder="Input Usia..."
+            min="18" max="100" class="number" type="number">
+          <div class="suffix">tahun</div>
+          </div>
+          <div class="error-message"></div>
+          <!-- Age data input end -->
+
+          <!-- Height data input start -->
+          <h2>Tinggi Badan</h2>
+          <label for="height">Tinggi Badan (cm)</label>
+          <div class="input-wrapper"> <input id="height" placeholder="Input Tinggi Badan..."
+            min="100" max="250" class="number" type="number">
+          <div class="suffix">cm</div>
+          </div>
+          <div class="error-message"></div>
+          <!-- Height data input start --> </form>
+        <!-- User form input end -->
+
   </body>
   </html>
