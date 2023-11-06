@@ -43,3 +43,28 @@ const $ = (item) => {
       }
     });
   });
+  // Membuat fungsi untuk memvalidasi nilai dari form input dan radio button
+  function validation() {
+    // Mendefinisikam kondisi awal objek
+    let isRadioChecked = false;
+    let isInputEmpty = true;
+  
+    $_("input").forEach((input) => {
+      // Jika jenis kelamin dipilih, maka kondisi diubah menjadi "true"
+      if (input.type === "radio" && input.checked) {
+        isRadioChecked = true;
+      }
+      // Jika form kosong, kondisi diubah menjadi "false"
+      if (input.value !== "") {
+        isInputEmpty = false;
+      }
+    });
+  
+    // Jika salah satu kosong maka akan memunculkan peringatan ke user
+    if (!isRadioChecked || isInputEmpty) {
+      return ($(".warning").textContent = "*Semua kolom wajib diisi");
+    }
+  
+    // Kondisi dimana jika validasi berhasil, peringatan akan dihapus
+    return ($(".warning").textContent = "");
+  }
