@@ -68,3 +68,32 @@ const $ = (item) => {
     // Kondisi dimana jika validasi berhasil, peringatan akan dihapus
     return ($(".warning").textContent = "");
   }
+  // Membuat fungsi untuk animasi scroll jika submit button ditekan
+  function scrollToResult() {
+    const resSection = document.getElementById("res");
+    resSection.scrollIntoView({ behavior: "smooth" });
+  }
+  
+  // Menambahkan event listener untuk button submit saat ditekan
+  // Menjalankan proses kalkulasi perhitungan BMI dan menampilkan hasil
+  $("#button-submit").addEventListener("click", async () => {
+    (async () => {
+      // Menginisialisasi objek dan value yang akan digunakan
+      const hei = $("#height").value / 100,
+        wei = $("#weight").value,
+        age = $("#age").value;
+  
+      let res = 0;
+  
+      // Membuat objek untuk menyimpan data hasil perhitungan BMI
+      const stat = {
+        head: "",
+        info: "",
+        nums: "",
+        unit: "",
+        sums: "",
+        cats: "",
+        type: "",
+        avgs: "",
+        suggest: "",
+      };
