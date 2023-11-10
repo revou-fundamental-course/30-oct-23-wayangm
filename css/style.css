@@ -8,7 +8,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    /* border:dashed 1px black; */
   }
   
   html {
@@ -16,23 +15,27 @@
   }
   
   body {
-    background: white;
+    background: rgb(155, 155, 155);
     height: 100%;
-    margin: 10px 10px;
+    max-width: 80%;
+    align-items: center;
+    margin: auto;
     font-family: Poppins, sans-serif;
   }
   
   .banner {
+    margin-top: 10px;
     position: relative;
     height: 330px;
-    background-color: rgb(73, 167, 221);
+    background-color: rgb(242, 243, 245);
     background-size: auto;
+    border-radius: 20px;
   }
   
   .banner .title-desc {
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: 50%;
+    top: 40%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -40,9 +43,8 @@
   
   .banner .title-desc h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 40px;
     font-family: cursive;
-    color: rgb(7, 25, 82);
     margin-bottom: 1rem;
   }
   
@@ -55,20 +57,31 @@
     width: 100%;
   }
   
-  
-  
-  #description p {
-    text-align: center;
-    font-size: 22px;
-    color: rgb(11, 102, 106);
-    padding: 5px auto;
-    position: relative;
-    width: 100%;
+  .description{
+    background-color: rgb(242, 243, 245);
+    border-radius: 20px;   
   }
   
+.description h3 {
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+.description ol{
+  margin-left: 20px;
+}
+
+.description p{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
   .form {
     background-color: rgb(242, 243, 245);
     margin-bottom: 10px;
+    width: 100%;
+  border-radius: 20px;
   }
   
   .form form h2 {
@@ -386,11 +399,19 @@
     /* height: auto; */
   }
   .text-center-footer{
+    height: 30px;
+    padding-top: 5px;
     text-align: center;
-    font-size: 14px;
+    font-size: 24px;
     color: rgb(9, 214, 221);
+    background-color: rgb(242, 243, 245);
     padding: 5px auto;
     position: relative;
     width: 100%;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
+ 
   
+/* -------------------------------------*/
