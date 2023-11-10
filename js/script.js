@@ -250,3 +250,5 @@ const $ = (item) => {
       sum_main.style.color = "initial";
     });
   });
+
+  //tes masih connect atau tidak
